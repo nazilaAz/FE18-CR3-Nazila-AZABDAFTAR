@@ -1,1 +1,28 @@
-<p>menu works!</p>
+<div class="container-fluid">
+    <h1>
+        Our Speciallies
+    </h1>
+    <hr>
+    <div class="row row-cols-3">
+        <div class="col" *ngFor="let foodVal of food; index as i">
+            <div class="card mt-3 my-3">
+                <img src="../../assets/images/{{ foodVal.image }}" class="card-img-left h-45" alt="{{ foodVal.image }}">
+                <div class="card-body">
+                    <h5 class="card-title h6">{{ foodVal.name }}</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum magni consequuntur placeat.
+                    </p>
+                    <hr>
+                    <p class="h6">{{ foodVal.price }} €</p>
+                    <!-- <p class="h6">{{ foodVal.availability }}</p> -->
+                    <div id="btn">
+                        <button type="button" class="btn btn-primary ">Details</button>
+                        <button type="button" class="btn btn-success">Order</button>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

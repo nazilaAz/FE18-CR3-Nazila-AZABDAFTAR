@@ -4,86 +4,87 @@ body {
     font-size: 16px;
 }
 
-.h1 {
-    text-align: center;
-    font-family: 'Great Vibes', cursive;
-    font-size: 5rem;
-    margin-top: 1rem;
-}
-
-.card {
-    margin: 1rem auto;
-    flex-direction: row;
-    border: 0;
-    font-family: 'Oswald', sans-serif;
-    h5 {
-        margin-top: 5rem;
-    }
-    img {
-        width: 25%;
-    }
-}
-
-.why {
-    text-align: center;
-    margin-top: 6rem;
-    width: 100%;
-    height: 24rem;
-    background-color: #f0f0f0;
-    .h3 {
-        padding-top: .7rem;
+.container-sm {
+    margin: 0 auto;
+    h1 {
+        text-align: center;
         font-family: 'Great Vibes', cursive;
-        font-size: 2.5rem;
-    }
-    .h5 {
-        margin-top: 0;
-    }
-    p {
-        font-family: 'Oswald', sans-serif;
+        font-size: 5rem;
+        margin-top: 1rem;
     }
     .card {
-        text-align: left;
-        background-color: #f0f0f0;
-    }
-}
-
-.specials {
-    text-align: center;
-    margin-top: 3rem;
-    width: 100%;
-    height: 24rem;
-    // background-color: #f0f0f0;
-    .h3 {
-        padding-top: .7rem;
-        font-family: 'Great Vibes', cursive;
-        font-size: 2.5rem;
-    }
-    p {
+        margin: 1rem auto;
+        flex-direction: row;
+        border: 0;
         font-family: 'Oswald', sans-serif;
-    }
-    .gridBtn {
-        text-align: left;
-        .btn {
-            display: block;
-            margin: 2px 0;
-            width: 13rem;
+        h5 {
+            margin-top: 5rem;
+        }
+        img {
+            width: 25%;
         }
     }
-    .gridTxt {
-        text-align: left;
+    .why {
+        text-align: center;
+        margin-top: 6rem;
+        width: 100%;
+        height: 24rem;
+        background-color: #f0f0f0;
+        .h3 {
+            padding-top: .7rem;
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5rem;
+        }
         .h5 {
             margin-top: 0;
         }
-    }
-    .gridImg {
-        img {
-            width: 20rem;
-            height: auto;
+        p {
+            font-family: 'Oswald', sans-serif;
+        }
+        .card {
+            text-align: left;
+            background-color: #f0f0f0;
         }
     }
-    .sGrid {
-        padding-top: 1rem;
-        display: grid;
-        grid-template-columns: 25% auto 33%;
+    .specials {
+        text-align: center;
+        margin-top: 3rem;
+        width: 100%;
+        height: 24rem;
+        // background-color: #f0f0f0;
+        .h3 {
+            padding-top: .7rem;
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5rem;
+        }
+        p {
+            font-family: 'Oswald', sans-serif;
+        }
+        .gridBtn {
+            text-align: left;
+            .btn {
+                display: block;
+                margin: 2px 0;
+                width: auto;
+                font-size: .8rem;
+            }
+        }
+        .gridTxt {
+            text-align: left;
+            .h5 {
+                margin-top: 0;
+            }
+        }
+        .gridImg {
+            img {
+                width: 20vw;
+                height: 20vh;
+            }
+        }
+        .sGrid {
+            padding-top: 1rem;
+            display: grid;
+            grid-template-columns: 25% auto 33%;
+        }
     }
 }

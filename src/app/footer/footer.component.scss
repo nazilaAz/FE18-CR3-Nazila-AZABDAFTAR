@@ -1,11 +1,16 @@
-footer {
-    width: 98vw;
-    height: 8vh;
-    background-color: black;
+.container-fluid {
     margin: 0 auto;
-    .footerAlight {
-        color: white;
-        line-height: 5;
-        margin-bottom: 0;
+    padding: 0;
+    width: 98vw;
+    footer {
+        width: 98vw;
+        height: 8vh;
+        background-color: black;
+        margin: 0 auto;
+        .footerAlight {
+            color: white;
+            line-height: 5;
+            margin-bottom: 0;
+        }
     }
 }

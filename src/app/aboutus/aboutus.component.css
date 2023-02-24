@@ -4,82 +4,83 @@ body {
   font-size: 16px;
 }
 
-.h1 {
+.container-sm {
+  margin: 0 auto;
+}
+.container-sm h1 {
   text-align: center;
   font-family: "Great Vibes", cursive;
   font-size: 5rem;
   margin-top: 1rem;
 }
-
-.card {
+.container-sm .card {
   margin: 1rem auto;
   flex-direction: row;
   border: 0;
   font-family: "Oswald", sans-serif;
 }
-.card h5 {
+.container-sm .card h5 {
   margin-top: 5rem;
 }
-.card img {
+.container-sm .card img {
   width: 25%;
 }
-
-.why {
+.container-sm .why {
   text-align: center;
   margin-top: 6rem;
   width: 100%;
   height: 24rem;
   background-color: #f0f0f0;
 }
-.why .h3 {
+.container-sm .why .h3 {
   padding-top: 0.7rem;
   font-family: "Great Vibes", cursive;
   font-size: 2.5rem;
 }
-.why .h5 {
+.container-sm .why .h5 {
   margin-top: 0;
 }
-.why p {
+.container-sm .why p {
   font-family: "Oswald", sans-serif;
 }
-.why .card {
+.container-sm .why .card {
   text-align: left;
   background-color: #f0f0f0;
 }
-
-.specials {
+.container-sm .specials {
   text-align: center;
   margin-top: 3rem;
   width: 100%;
   height: 24rem;
 }
-.specials .h3 {
+.container-sm .specials .h3 {
   padding-top: 0.7rem;
   font-family: "Great Vibes", cursive;
   font-size: 2.5rem;
 }
-.specials p {
+.container-sm .specials p {
   font-family: "Oswald", sans-serif;
 }
-.specials .gridBtn {
+.container-sm .specials .gridBtn {
   text-align: left;
 }
-.specials .gridBtn .btn {
+.container-sm .specials .gridBtn .btn {
   display: block;
   margin: 2px 0;
-  width: 13rem;
+  width: auto;
+  font-size: 0.8rem;
 }
-.specials .gridTxt {
+.container-sm .specials .gridTxt {
   text-align: left;
 }
-.specials .gridTxt .h5 {
+.container-sm .specials .gridTxt .h5 {
   margin-top: 0;
 }
-.specials .gridImg img {
-  width: 20rem;
-  height: auto;
+.container-sm .specials .gridImg img {
+  width: 20vw;
+  height: 20vh;
 }
-.specials .sGrid {
+.container-sm .specials .sGrid {
   padding-top: 1rem;
   display: grid;
   grid-template-columns: 25% auto 33%;

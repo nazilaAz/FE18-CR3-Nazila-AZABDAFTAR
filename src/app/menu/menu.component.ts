@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { IFood } from '../IFood';
+import { foods } from '../foods';
 
 @Component({
   selector: 'app-menu',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class MenuComponent {
 
+  food: Array<IFood> = foods;
 }
