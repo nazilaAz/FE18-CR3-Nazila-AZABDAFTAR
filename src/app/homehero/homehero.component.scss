@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+.hero {
+    background-image: url("../../assets/images/pexels-narda-yescas-1566837.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.8;
+    width: 98vw;
+    height: 58rem;
+    color: white;
+    text-align: center;
+    padding-top: 20rem;
+    margin: 0 auto;
+    h1 {
+        font-family: 'Great Vibes', cursive;
+        font-size: 5rem;
+    }
+    p {
+        font-size: 1.8rem;
+    }
+    .btn {
+        margin: 0 1rem;
+    }
+}
