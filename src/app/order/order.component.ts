@@ -16,6 +16,7 @@ export class OrderComponent implements OnInit {
   price: number = 0;
   sum: number = 0;
   total: number = 0;
+  percent: number = 0;
 
 
   constructor(private orderService: MenudetailService,
@@ -28,8 +29,12 @@ export class OrderComponent implements OnInit {
     for (let i = 0; i < this.cart.length; i++) {
 
       this.price += +this.cart[i].price;
-      this.total = +this.price + 3.10;
-      this.sum = +this.total.toFixed(2);
+      
+      this.total = +this.price;// + 3.10;
+      this.percent = (this.total * 10) / 100;
+      // console.log(this.percent);
+      // console.log(this.total);
+      this.sum =(+this.percent) + (+this.total.toFixed(2));
       console.log(this.sum);
 
 
