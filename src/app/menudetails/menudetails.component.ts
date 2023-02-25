@@ -20,8 +20,7 @@ export class MenudetailsComponent implements OnInit {
   }
   addToCart() {
     this.menuService.addTocart(this.menuDetail);
-    // this.id++;
-    
+       
       }
       ngOnInit() {
 

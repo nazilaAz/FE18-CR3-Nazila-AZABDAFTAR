@@ -6,14 +6,20 @@ import { IFood } from './IFood';
 })
 export class MenudetailService {
   cart: Array<IFood> = [];
+ id:number=0;
 
   constructor() { }
 
   addTocart(orderTocart: IFood) {
     this.cart.push(orderTocart);
+    
+   
   }
   showCart(){
+   
     return this.cart;
+    
+  
   }
   emptyCart(){
     this.cart=[];
