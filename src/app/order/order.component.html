@@ -1,1 +1,29 @@
-<p>order works!</p>
+<div class="container">
+    <!-- <p *ngFor="let val of cart; index as i">{{val.name}}</p> -->
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <!-- <th scope="col">No.</th> -->
+                <th scope="col">Name</th>
+                <th scope="col">Picture</th>
+                <th scope="col">Price</th>
+                <th scope="col">Description</th>
+                <th scope="col">Delete</th>
+
+            </tr>
+        </thead>
+        <tbody *ngFor="let val of cart; index as i">
+            <tr>
+                <!-- <th scope="row">{{i}}</th> -->
+                <td>{{val.name}}</td>
+                <td><img class="img-thumbnail" src="../../assets/images/{{val.image}}"></td>
+                <td>{{val.image}}</td>
+                <td>{{val.description}}</td>
+                <!-- <button type="button" class="btn btn-warning">Del</button> -->
+
+            </tr>
+        </tbody>
+    </table>
+</div>

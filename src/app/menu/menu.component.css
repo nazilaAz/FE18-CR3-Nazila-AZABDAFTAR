@@ -19,9 +19,11 @@ body {
   margin-top: 2rem;
   position: absolute;
   top: 22rem;
-  display: flex;
-  justify-content: space-between;
 }
 .container-fluid .card .card-body .btn {
   margin-left: 1rem;
+  display: none;
+}
+.container-fluid .card span {
+  color: red;
 }/*# sourceMappingURL=menu.component.css.map */

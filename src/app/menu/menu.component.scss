@@ -20,12 +20,16 @@ body {
                 margin-top: 2rem;
                 position: absolute;
                 top: 22rem;
-                display: flex;
-                justify-content: space-between;
+                // display: flex;
+                // justify-content: space-between;
             }
             .btn {
                 margin-left: 1rem;
+                display: none;
             }
+        }
+        span {
+            color: red;
         }
     }
 }

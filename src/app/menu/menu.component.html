@@ -4,7 +4,7 @@
     </h1>
     <hr>
     <div class="row row-cols-3">
-        <div class="col" *ngFor="let foodVal of food; index as i">
+        <div class="col" *ngFor="let foodVal of food; index as id">
             <div class="card mt-3 my-3">
                 <img src="../../assets/images/{{ foodVal.image }}" class="card-img-left h-45" alt="{{ foodVal.image }}">
                 <div class="card-body">
@@ -13,16 +13,13 @@
                     </p>
                     <hr>
                     <p class="h6">{{ foodVal.price }} €</p>
-                    <!-- <p class="h6">{{ foodVal.availability }}</p> -->
-                    <div id="btn">
-                        <button type="button" class="btn btn-primary ">Details</button>
-                        <button type="button" class="btn btn-success">Order</button>
+                    <div id="btn" *ngIf="foodVal.availability; else elseBlock">
+                        <button type="button" class="btn btn-primary" style="display: inline-block;" routerLink="/menu/{{ id }}">Details</button>
+                        <button type="button" class="btn btn-success" style="display: inline-block;" (click)="orderTocart(foodVal)">Order</button>
                     </div>
-
+                    <ng-template #elseBlock><span>Not available!</span></ng-template>
 
                 </div>
-
             </div>
         </div>
     </div>
-</div>
