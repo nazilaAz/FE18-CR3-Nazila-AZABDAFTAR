@@ -19,10 +19,11 @@ export class MenudetailsComponent implements OnInit {
     
   }
   addToCart() {
+    alert("Added!");
     this.menuService.addTocart(this.menuDetail);
        
       }
-      ngOnInit() {
+      ngOnInit():void {
 
         this.route.params.subscribe((params: Params) => {
           // console.log(params);

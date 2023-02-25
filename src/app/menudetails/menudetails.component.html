@@ -4,6 +4,6 @@
     <p><span>{{ menuDetail.name }}</span>
         <br>{{ menuDetail.description }}</p>
     <span>{{ menuDetail.price | currency}}</span>
-    <button type="button" class="btn btn-success">Buy</button>
+    <button type="button" class="btn btn-success" (click)="addToCart()">Buy</button>
 
 </div>
