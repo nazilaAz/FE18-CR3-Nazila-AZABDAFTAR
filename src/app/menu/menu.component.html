@@ -6,7 +6,7 @@
     <div class="row row-cols-3">
         <div class="col" *ngFor="let foodVal of food; index as id">
             <div class="card mt-3 my-3">
-                <img src="{{ foodVal.image }}" class="card-img-left h-45" alt="{{ foodVal.image }}">
+                <img src="assets/images/{{ foodVal.image }}" class="card-img-left h-45" alt="{{ foodVal.image }}">
                 <div class="card-body">
                     <h5 class="card-title h6">{{ foodVal.name }}</h5>
                     <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum magni consequuntur placeat.

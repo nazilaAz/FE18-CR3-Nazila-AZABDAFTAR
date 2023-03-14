@@ -1,6 +1,6 @@
 <div class="container" *ngIf="menuDetail">
     <hr>
-    <img class="image" src="{{ menuDetail.image }}" alt="order">
+    <img class="image" src="assets/images/{{ menuDetail.image }}" alt="order">
     <p><span>{{ menuDetail.name }}</span>
         <br>{{ menuDetail.description }}</p>
     <span>{{ menuDetail.price | currency}}</span>
