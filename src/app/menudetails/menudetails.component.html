@@ -1,9 +1,0 @@
-<div class="container" *ngIf="menuDetail">
-    <hr>
-    <img class="image" src="../../assets/images/{{ menuDetail.image }}" alt="order">
-    <p><span>{{ menuDetail.name }}</span>
-        <br>{{ menuDetail.description }}</p>
-    <span>{{ menuDetail.price | currency}}</span>
-    <button type="button" class="btn btn-success" (click)="addToCart()">Buy</button>
-
-</div>
